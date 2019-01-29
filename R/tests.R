@@ -243,6 +243,9 @@ modelTest <- function(x, errors, nsim, bins=NA, runm=NA, timeRange=NA, gridclip=
     for (s in 1:nsim){ 
 	if (verbose){ setTxtProgressBar(pb, s) } 
 
+	    
+	    ## TASK 1: try to remove for loops and if statement through vectorization
+	    ## TASK 2: see what is actually draining so much memory and address the issue
     if (method=="uncalsample")
     {
 	    randomDates <- vector("list",length=ncc)
